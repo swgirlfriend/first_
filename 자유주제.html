@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>2022221001 강연서_자유주제</title>
+
+        <style>
+
+        @font-face {
+        font-family: 'DungGeunMo';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        @font-face {
+        font-family: 'S-CoreDream-3Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        @font-face {
+        font-family: 'DOSSaemmul';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        @font-face {
+        font-family: 'NeoDunggeunmo';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        @font-face {
+        font-family: 'PFStardust';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        @font-face {
+        font-family: 'dalmoori';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/dalmoori.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        @font-face {
+        font-family: 'Sam3KRFont';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+
+        h1 {font-family: 'DungGeunMo'; text-align: right; padding-right: 72px;}
+        h2 {font-family: 'DungGeunMo'; background-color: rgb(241, 241, 241);}
+        h3 {font-family: 'NeoDunggeunmo'; font-size: 18px; font-weight: lighter; padding-bottom: 10px; color: #6a6a6a;}
+        h4 {font-family: 'DungGeunMo'; color: rgb(255, 109, 172); font-size: 15px; text-align: left; padding-left: 30px}
+        h5 {font-family: 'DungGeunMo'; color: rgb(0, 0, 0); font-size: 11px; text-align: left; padding-left: 50px;}
+        h6 {font-family: 'DungGeunMo'; color: rgb(0, 0, 0); font-size: 11px; text-align: left; padding-left: 80px;}
+
+        p {font-family: 'NeoDunggeunmo'; color: white; size: 16px;}
+
+        li {padding-top: 5px; font-weight: 'NeoDunggeunmo';}
+
+        span{color: grey; font-weight:100; font-size: 11px;}
+
+        hr {color: rgb(211, 211, 211);}
+
+        text {width: 200px;}
+
+        #heart {font-family: 'DungGeunMo'; color: rgb(121, 121, 121); font-size: 15px;}
+
+    /* 초기화 */
+        * { margin: 0; padding: 0;font-family: 'DungGeunMo'; font-size: 12px;}
+        a { text-decoration: none; }
+        li { font-family: 'S-CoreDream-3Light'; list-style: none; }
+
+    /* 기본 클래스 */
+        .pull-left { float: left; }
+        .pull-right { float:right; }
+
+    /* 페이지 */
+        html {background: url(https://i.pinimg.com/564x/5e/56/6b/5e566b668697cea257e143833c308a9a.jpg); background-size:contain ; }
+
+        body { width: 960px; margin: 0;}
+
+        #page-border {background: rgb(255, 183, 214);
+            width: 1300px; height: 670px;
+            margin-top: 30px; margin-left: 30px; margin-right: 30px; margin-bottom: 30px;
+            padding: 20px 20px;
+            border-radius: 20px;
+            box-shadow: 2px 6px rgba(100, 100, 100, 0.3);
+            }
+
+        #page-border-dash {background: rgb(255, 183, 214);
+            width: 1280px; height: 650px;
+            padding: 5px 5px;
+            border-radius: 15px;
+            border: 2px rgb(255, 255, 255) dashed;
+            }
+
+        #page-wrapper {background: rgb(247, 247, 247);
+            width: 1240px; height: 630px;
+            border-radius: 10px;
+            padding: 10px 20px;
+            }
+        
+    /* 헤더 */
+        #main-header { }
+        .master-title { font-family:'DungGeunMo'; font-size: 17px; color: #181818; text-align: left; padding-left: 20px; padding-bottom: 15px;}
+        .master-description {font-family:'S-CoreDream-3Light'; font-size: 12px; font-weight: 500;color: rgb(255, 83, 158); text-align:center; }
+
+    /* 칸 나누기*/
+        .nav {width: 17%; height: 520px; float: left; background: rgb(255, 255, 255); color: rgb(0, 0, 0); text-align: center; border-radius: 20px; margin-right: 2%; border: 2px rgb(211, 211, 211) solid }
+        .section {width: 68%; height: 85%; float: left; background: rgb(255, 255, 255); color: rgb(0, 0, 0); text-align: center; border-radius: 20px; border: 2px rgb(211, 211, 211) solid }
+        .aside {width: 10%; height: 65%; float: left; background: rgb(247, 247, 247); color: rgb(0, 0, 0); text-align: left; padding-top: 25px;}
+        .footer {font-family:'S-CoreDream-3Light'; font-size: 12px; width: 1240; height: 0%; clear: both; background-color: rgba(240, 255, 255, 0);color: rgb(255, 83, 158); text-align: center;}
+
+
+    /* 네비게이션 */
+        #main-navigation {
+            border-top: 1px solid #C8C8C8;
+            border-bottom: 1px solid #C8C8C8;
+            margin-bottom: 20px;
+            height: 40px;}
+        
+        .outer-menu-item {
+            float: left;
+            position: relative;}
+
+        .outer-menu-item:hover {
+            background: none;
+            color: rgb(102, 102, 102);}
+
+        .menu-title {
+                border-radius: 10px; border-top-left-radius:0px; border-bottom-left-radius: 0px;
+                background: rgb(255, 109, 172);
+                padding-left: 10px;
+                padding-top: 7px; 
+                width: 130px;
+                height: 18px;
+                text-align: left;
+                font-family: 'DungGeunMo'; font-size: 20px; color: white;}
+
+        .inner-menu {
+            display: none;
+            position: absolute;
+            top: 40px; left: 0;
+            width: 140px;
+            background: rgb(247, 247, 247);
+            z-index: 1000;
+            text-align: center}
+
+        .inner-menu-item > a {
+            display: block;
+            padding: 5px 10px;
+            border-radius: 10px; border-top-left-radius:0px; border-bottom-left-radius: 0px;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            background-color:rgb(255, 183, 214) ;}
+
+        .inner-menu-item > a:hover {
+            font-size: 17px;
+            background: rgb(199, 199, 199);
+            color: white;}
+
+        
+    /* 네비게이션 내부의 검색 */
+        .search-bar {
+            height: 26px;
+            padding: 7px;}
+
+        .input-search {
+            display: block;
+            float: left;
+
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 15px 0 0 15px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+
+            width: 120px; height: 24px;
+            padding: 0 0 0 10px;
+            font-size: 12px;
+            color: #555555;}
+
+        .input-search:focus {
+            border-color: rgba(82, 168, 236, 0.8);
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);}
+
+        .input-search-submit {
+            display: block;
+            float: left;
+
+            width: 50px; height: 26px;
+            border-radius: 0 15px 15px 0;
+            border: 1px solid #CCCCCC;
+
+            margin-left: -1px;
+
+            vertical-align: top;
+            display: inline-block;}
+
+            audio {height: 12px; align-items:right;}
+
+        /* 텍스트 박스*/
+            #rcorners1 {
+                border-radius: 10px; border-top-left-radius:0px; border-bottom-left-radius: 0px;
+                background: rgb(255, 109, 172);
+                padding-left: 10px;
+                padding-top: 7px;
+                width: 120px;
+                height: 18px;
+                text-align: left;
+                font-family: 'DungGeunMo'; font-size: 13px;}
+
+            #rcorners2 {
+                border-radius: 10px;
+                border: 1px solid rgb(193, 193, 193);
+                color: black;
+                padding: 5px;
+                width: 200px;
+                height: 15px;
+                font-family: 'DungGeunMo'; font-size: 13px; padding-top: 10px;
+            }
+
+            #rcorners3 {
+                
+                border-radius: 3px;
+                border-style: solid none solid none;
+                background-color: #ff9dc7;
+                color: rgb(255, 255, 255);
+                padding: 5px;
+                width: 201px;
+                height: 15px;
+                font-family: 'NeoDunggeunmo'; padding-top: 9px; font-size: 18px; font-weight: lighter; text-align: center;
+             }
+
+             #line { background-color: grey; height:1px; width: 700px; align: center; margin-top: 5px; margin-bottom: 5px; margin-left: 72px;}
+             #line2 { background-color: rgb(181, 181, 181); height:1px; width: 782px; align: center; margin-top: 10px; margin-bottom: 10px; margin-left: 28px;}
+
+</style>
+
+
+
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script>
+            $(document).ready(function () {
+            $('.outer-menu-item').hover(function () {
+                $(this).find('.inner-menu').show();
+            }, function () {
+                $(this).find('.inner-menu').hide();
+            });
+        });
+            </script>
+            
+    </head>
+
+    <body>
+
+        <div id="page-border">
+        <div id="page-border-dash">
+        <div id="page-wrapper">
+            <header id="main-header">
+                <hgroup>
+                    <header class="master-description">｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚‧｡♥｡‧˚♡˚</header>
+                    <br><h3 class="master-title"> 연서공듀✰ 님의 미니홈피
+                    <audio src="강연서 자유과제/선우크림.mp3" controls autoplay loop></audio>
+                </hgroup>
+            </header>
+    
+            <nav class="nav">
+                <br>
+                <img src="강연서 자유과제/2.gif" width="180">
+                <br><br>
+                <p id="rcorners2">ID: 연서공듀✰(yeonseo0718)</p><br><br>
+                <span>〃영혼까지도사Z5할水있는㈏〃<br> 약속해줄께¸ⓞ원히¸너만을¸ 사랑해♡〃<br>‥한사람밖어l모르능은ㅈı능밥오곰Ёl＿</span><br>
+                <br><br>
+                
+                    <p id="rcorners3">SNS</p>
+                    <ul>
+                        <li><a href="https://www.instagram.com/nlecture_ing/">인스타그램</a></li>
+                        <li><a href="https://blog.naver.com/yeonseo0718">블로그</a></li>
+                    </ul>
+
+                <br>
+                <p id="rcorners3">FRIENDS</p>
+                    <ul>
+                        <li><a href="">김솔</a></li>
+                        <li><a href="">김예담</a></li>
+                        <li><a href="">김신우</a></li>
+                    </ul>
+                </h1>
+            </nav>
+                
+        <section class="section">
+            <br>
+            <h4>❥ 타임라인</h4>
+            <h5>[22/05/09 PM 08:43] 피곤방귀 뿡뿡방귀</h5>
+            <h5>[22/05/01 AM 03:15] 교수님 질문이 왕창 있읍니다 .</h5>
+            <h5>[22/04/29 AM 06:48] 반가버반가버~~~^^ 비가 온다능~</h5>
+            
+            </h5>
+            <p id="line2"></p>
+            <h4>❥ 연서공듀✰ 님의 미니룸</h4><br>
+            <img src="강연서 자유과제/키티.gif" width="700px"><br>
+            <h1> 💖 좋아요(412)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox"> 비밀글
+            <input type="text" value="댓글을 입력하세요.">
+            <input type="submit" value="전송">
+            </h1>
+            <p id="line"></p>
+            <h6>ㄴ 최찬희(chani_426): 키티방 예쁘다 :)<br>
+                ㄴ 김선우(sunowo._.): <span>비밀글로 작성된 글입니다.</span> </h6>
+        
+        </section>
+
+        <aside class="aside">
+                <div class="aside-list">
+                    
+                    <li class="outer-menu-item">
+                        <h3 class="menu-title">DIARY LIST</h3>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="일기1.html">22/04/02(토)</a></li>
+                            <li class="inner-menu-item"><a href="일기2.html" >22/04/10(일)</a></li>
+                            <li class="inner-menu-item"><a href="일기3.html" >22/04/14(목)</a></li>
+                            <li class="inner-menu-item"><a href="일기4.html" >22/04_넷째주</a></li>
+                        </ul>
+                    </li>
+                    
+
+                    <li class="outer-menu-item">
+                        <h3 class="menu-title">BLOG LIST</h3>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="https://blog.naver.com/yeonseo0718/222476644697" target="_blank">주절주절_04</a></li>
+                            <li class="inner-menu-item"><a href="https://blog.naver.com/yeonseo0718/222505492677" target="_blank">주절주절_05</a></li>
+                            <li class="inner-menu-item"><a href="https://blog.naver.com/yeonseo0718/222628861958" target="_blank">주절주절_08</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="outer-menu-item">
+                        <h3 class="menu-title">PLAYLIST</h3>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="https://youtube.com/playlist?list=PLCQ8T02CfZIMOnZa9sPq7blao9iunQmu1" target="_blank">EXCITED MOOD</a></li>
+                            <li class="inner-menu-item"><a href="https://youtube.com/playlist?list=PLCQ8T02CfZIPdlBSrd3Jek5_B3m82kqkZ" target="_blank">CALM MOOD</a></li>
+                            <li class="inner-menu-item"><a href="https://music.youtube.com/playlist?list=PLCQ8T02CfZIMKrWk9nOROA2Qdbsa-qfZw&feature=share" target="_blank">J-POP</a></li>
+                            <li class="inner-menu-item"><a href="https://music.youtube.com/playlist?list=PLCQ8T02CfZIPNi0n5gTf7aY-b7_spxMkr&feature=share" target="_blank">JAZZ</a><li></li>
+                        </ul>
+                    </li>
+                    
+
+                    <li class="outer-menu-item">
+                        <h3 class="menu-title">SOUNDCLODE</h3>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="https://soundcloud.com/official_theboyz/like-a-birthday-cake" target="_blank">berry</a></li>
+                            <li class="inner-menu-item"><a href="https://soundcloud.com/official_theboyz/to-theb-from-sunwoo" target="_blank">광합성</a></li>
+                            <li class="inner-menu-item"><a href="https://soundcloud.com/jihoon1215/hate-11" target="_blank">HATE</a></li>
+                            <li class="inner-menu-item"><a href="https://soundcloud.com/official_theboyz/take-some-rest" target="_blank">Cream</a></li>
+                            <li class="inner-menu-item"><a href="https://soundcloud.com/official_theboyz/0329-from24" target="_blank">0329 from.24</a></li>
+                            <li class="inner-menu-item"><a href="https://soundcloud.com/official_theboyz/lets-be-happy" target="_blank">happy</a></li>
+                            <li class="inner-menu-item"><a href="https://soundcloud.com/bangtan/thankyouarmy2020" target="_blank">still with you</a></li>
+                        </ul>
+                    </li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <img src="강연서 자유과제/양새끼.gif" width="250">
+                
+        </aside>
+
+        <footer class="footer"><br>｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚ ‧｡♥｡‧˚♡˚‧｡♥｡‧˚♡˚</footer>
+        </div></div></div>
+        
+        
+    </body>
+</html>
